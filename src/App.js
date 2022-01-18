@@ -3,6 +3,10 @@ import './App.css'
 import Cookies from 'js-cookie'
 import { useLocation  } from 'wouter'
 
+import l1c2 from './assets/l1c2.mp4'
+import l2c1 from './assets/l2c1.mp4'
+import l2c2 from './assets/l2c2.mp4'
+
 export default function App () {
     const [videoPlayer, setVideoPlayer] = useState(false)
     const [playBtn, setPlayBtn] = useState(true)
@@ -14,8 +18,9 @@ export default function App () {
     const video = useRef()
 
     useEffect(() => {
-        console.log(location)
-        setSRC(`./assets${location}.mp4`)
+        if (location === '/l1c2') setSRC(l1c2)
+        if (location === '/l2c1') setSRC(l2c1)
+        if (location === '/l2c2') setSRC(l2c2)
     }, [location])
 
     const handlePlay = () => {
