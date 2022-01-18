@@ -60,7 +60,7 @@ export default function App () {
 
                         }</>
                         : <>
-                            <p>El siguiente video se visualizarse por unica vez luego de iniciar la reproducción y no podrá pausarse</p>
+                            <p>El siguiente video podrá visualizarse por unica vez luego de iniciar la reproducción y no podrá pausarse</p>
                             <button onClick={handleVideo}>Continuar</button>
                         </>
                     }
