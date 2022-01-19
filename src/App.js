@@ -71,7 +71,8 @@ export default function App () {
                     className='video'
                     src={SRC} 
                     controls={false}
-                    playsinline
+                    webkit-playsinline="true"
+                    playsinline="true"
                     ref={video}
                     onTimeUpdate={handleTime}/>
         }
