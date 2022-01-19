@@ -12,6 +12,12 @@
   max-height: 90vh;
   max-width: 100%;
 }
+video::-webkit-media-controls, 
+video::-webkit-media-controls-fullscreen-botton,
+video::-webkit-media-controls-play-botton,
+video::-webkit-media-controls-pause-botton {
+  display: none;
+}
 .player {
   width: 62px;
   height: 62px;
