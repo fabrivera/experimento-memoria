@@ -71,6 +71,7 @@ export default function App () {
                     className='video'
                     src={SRC} 
                     controls={false}
+                    playsinline
                     ref={video}
                     onTimeUpdate={handleTime}/>
         }
